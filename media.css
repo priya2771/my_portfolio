@@ -1,0 +1,130 @@
+@media screen and (max-width: 1200px) {
+  header {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+    /* background-color: aqua; */
+  }
+}
+@media (min-aspect-ratio: 16/9) {
+  .video_back {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .video_back {
+    width: auto;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .intro {
+    height: 500px; /* Adjust height for tablets */
+  }
+
+  .intro h1 {
+    font-size: 40px; /* Adjust font size for smaller screens */
+  }
+
+  .intro p {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .achievements {
+    flex-direction: column;
+  }
+
+  .achievements .work1,
+  .work3 {
+    width: 100%;
+    margin-bottom: 20px;
+    flex-direction: column; /* Stack video and content vertically */
+  }
+
+  .work2 {
+    width: 100%;
+    margin-bottom: 20px;
+    flex-direction: column; /* Stack video and content vertically */
+  }
+  .work1 video {
+    width: 100%;
+  }
+  .work2 video {
+    width: 100%;
+  }
+  .work3 video {
+    width: 100%;
+  }
+
+  .content {
+    padding: 35px;
+  }
+
+  .work-heading {
+    font-size: 20px;
+  }
+
+  .work-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about-me {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .about-me-text {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-me-text h2 {
+    font-size: 26px;
+  }
+
+  .about-me-text p {
+    font-size: 14px;
+  }
+
+  .about-me img {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer {
+    flex-direction: column;
+    padding: 20px 40px;
+  }
+
+  .bottom-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links {
+    margin-bottom: 20px;
+  }
+
+  .links span {
+    font-size: 18px;
+  }
+
+  .links a {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .links a i {
+    font-size: 20px;
+  }
+}

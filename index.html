@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <header>
+      <a href="# " class="logo"
+        ><img src="./photos/icon.png" alt="logo" />Developer</a
+      >
+      <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <nav id="hamburger-nav">
+      <a href="# " class="logo"
+        ><img src="./photos/icon.png" alt="logo" />Developer</a
+      >
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home">
+      <video autoplay loop muted plays-inline class="video_back">
+        <source src="./videos/backpg.mp4" type="video/mp4" />
+      </video>
+      <div class="intro">
+        <h1 class="anim">A web developer</h1>
+        <p class="anim">Lorem sum dolor sit amet.</p>
+      </div>
+    </section>
+    <section id="about">
+      <div class="achievements">
+        <div class="work1">
+          <div class="content">
+            <i class="fas fa-atom"></i>
+            <p class="work-heading">Projects</p>
+            <p class="work-text">Login wesite.</p>
+          </div>
+          <!-- <img src="./photos/project.jpg" alt="project" /> -->
+          <video autoplay loop muted plays-inline>
+            <source src="./videos/project1.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="work2">
+          <video autoplay loop muted plays-inline>
+            <source src="./videos/skill.mp4" type="video/mp4" />
+          </video>
+          <div class="content">
+            <i class="fas fa-skiing"></i>
+            <p class="work-heading">skills</p>
+            <div class="work-text">
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>JavaScript</p>
+              <p>Bootstrap</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="work3">
+          <div class="content">
+            <i class="fas fa-ethernet"></i>
+            <p class="work-heading">Education</p>
+            <p class="work-text">
+              ~Bachelor's degree in Statistics <br />
+              ~The Complete 2024 Web Development Bootcamp.
+            </p>
+          </div>
+          <video autoplay loop muted plays-inline>
+            <source src="./videos/education.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </section>
+    <div class="about-me">
+      <div class="about-me-text">
+        <h2>About me</h2>
+        <p>
+          Innovative Front End Developer building and maintaining responsive.
+          Proficient in HTML, CSS, JavaScript; plus modern libraries and
+          frameworks.
+        </p>
+      </div>
+      <img style="border-radius: 50%" src="./photos/profile.jpg" alt="me" />
+    </div>
+
+    <section id="contact">
+      <footer class="footer">
+        <div class="copy">&copy; 2024 Developer</div>
+        <div class="bottom-links">
+          <div class="links">
+            <span>More Info</span>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="links">
+            <span>social links</span>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </footer>
+      <script src="index.js"></script>
+    </section>
+  </body>
+</html>
